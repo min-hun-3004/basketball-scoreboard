@@ -1,0 +1,70 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="scoreboard">
+            <div>
+                <section class="main-container">
+                    <div class="team-container">
+                        <h3 class="title">HOME</h3>
+                        <h3 class="score" id="home-score">0</h3>
+                        <div class="button-container">
+                            <button onclick="plusOnePointHome()">+1</button>
+                            <button onclick="plusTwoPointsHome()">+2</button>
+                            <button onclick="plusThreePointsHome()">+3</button>
+                        </div>
+                    </div>
+                    <div class="team-container">
+                        <h3 class="title">GUEST</h3>
+                        <h3 class="score" id="guest-score">0</h3>
+                        <div class="button-container">
+                            <button onclick="plusOnePointGuest()">+1</button>
+                            <button onclick="plusTwoPointsGuest()">+2</button>
+                            <button onclick="plusThreePointsGuest()">+3</button>
+                        </div>
+                    </div>
+                </section>
+                <div class="sub-container">
+                    <button id="new-game-btn" onclick="newGame()">New Game</button>
+                </div>
+            </div>
+            <table id="score-table">
+                <thead>
+                    <tr>
+                        <th class="data-box" id="round-box">Round</th>
+                        <th class="data-box" id="home-box">Home</th>
+                        <th class="data-box" id="guest-box">Guest</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="data-box round-box">1</td>
+                        <td class="data-box" id="round-1-home-score">0</td>
+                        <td class="data-box" id="round-1-guest-score">0</td>
+                    </tr>
+                    <tr>
+                        <td class="data-box round-box">2</td>
+                        <td class="data-box" id="round-2-home-score">0</td>
+                        <td class="data-box" id="round-2-guest-score">0</td>
+                    </tr>
+                    <tr>
+                        <td class="data-box round-box">3</td>
+                        <td class="data-box" id="round-3-home-score">0</td>
+                        <td class="data-box" id="round-3-guest-score">0</td>
+                    </tr>
+                    <tr>
+                        <td class="data-box round-box">4</td>
+                        <td class="data-box" id="round-4-home-score">0</td>
+                        <td class="data-box" id="round-4-guest-score">0</td>
+                    </tr>
+                </tbody>
+            </table> 
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
