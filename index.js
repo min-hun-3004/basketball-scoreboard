@@ -1,7 +1,7 @@
 let homeScore = 0;
 let guestScore = 0;
 
-let currentRound = 1;
+let currentRoundCount = 1;
 
 function plusOnePointHome() {
     homeScore += 1;
@@ -36,7 +36,7 @@ function plusThreePointsGuest() {
 function newGame() {
     console.log(homeScore);
     console.log(guestScore);
-    currentRound += 1;
+    currentRoundCount += 1;
 
     homeScore = 0;
     guestScore = 0;
