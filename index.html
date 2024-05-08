@@ -31,40 +31,22 @@
                     </div>
                 </section>
                 <div class="sub-container">
-                    <button id="new-game-btn" onclick="newGame()">New Game</button>
+                    <button class="additional-btn" id="new-game-btn" onclick="newGame()">New Game</button>
+                    <button class="additional-btn" id="new-round-btn" onclick="newRound()">New Round</button>
                 </div>
             </div>
-            <table id="score-table">
-                <thead>
-                    <tr>
-                        <th class="data-box" id="round-box">Round</th>
-                        <th class="data-box" id="home-box">Home</th>
-                        <th class="data-box" id="guest-box">Guest</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="data-box round-box">1</td>
-                        <td class="data-box" id="round-1-home-score">0</td>
-                        <td class="data-box" id="round-1-guest-score">0</td>
-                    </tr>
-                    <tr>
-                        <td class="data-box round-box">2</td>
-                        <td class="data-box" id="round-2-home-score">0</td>
-                        <td class="data-box" id="round-2-guest-score">0</td>
-                    </tr>
-                    <tr>
-                        <td class="data-box round-box">3</td>
-                        <td class="data-box" id="round-3-home-score">0</td>
-                        <td class="data-box" id="round-3-guest-score">0</td>
-                    </tr>
-                    <tr>
-                        <td class="data-box round-box">4</td>
-                        <td class="data-box" id="round-4-home-score">0</td>
-                        <td class="data-box" id="round-4-guest-score">0</td>
-                    </tr>
-                </tbody>
-            </table> 
+            <div id="score-summary">
+                <h3 class="title">Score Summary</h3>
+                <ol>
+                    <li id="round-1">0 - 0</li>
+                    <li id="round-2">0 - 0</li>
+                    <li id="round-3">0 - 0</li>
+                    <li id="round-4">0 - 0</li>
+                    <li id="final-score"style="list-style: none;"></li>
+                </ol>
+                
+            </div>
+            
         </div>
         <script src="index.js"></script>
     </body>

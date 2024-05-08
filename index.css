@@ -66,29 +66,26 @@ button {
     font-family: 'Cursed Timer ULiL', sans-serif;
 }
 
-#new-game-btn {
+.additional-btn {
     width: 120px;
     height: 50px;
 }
 
-#score-table {
-    font-family: 'Cursed Timer ULiL', sans-serif;
-    width: 500px;
-    height: 300px;
-    margin: auto;
+#score-summary {
     color: #FFFFFF;
+    margin: 60px auto;
+    height: 250px;
 }
 
-th {
-    font-family: "Arimo", sans-serif;
+li {
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    padding: 5px;
+    font-size:20px;
+    margin: 5px;
 }
 
-.data-box {
-    border: 3px solid white;
-    text-align: center;
-    font-size: 30px;
+#final-score {
+    font-size: 40px;
+    color: goldenrod;
 }
 
-.round-box {
-    font-family: "Arimo", sans-serif;
-}
